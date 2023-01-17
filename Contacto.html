@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo.png" alt="logo alura"></h1>
+            <nav>
+             <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+             </ul>
+            </nav>
+        </div>
+    </header>
+    <h3 class="titulo-main">Contacto</h3>
+    <main>
+      
+        <form class="form">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" required>
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" required placeholder="ejemplo@gmail.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" required placeholder="(xx)-xxxx-xxxx">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje"></textarea>
+        
+            <fieldset class="puntos">
+            <legend class="sub-main">¿Como le gustaria que lo contactemos?</legend>
+            <label for="radio-email">
+                <input type="radio" name="Contacto" value="email" id="radio-email" class="padron">Email</label>
+            <label for="radio-telefono"> 
+                <input type="radio" name="Contacto" value="telefono" id="radio-telefono " class="padron">Telefono</label>
+            <label for="radio-whatsApp">
+                 <input type="radio" name="Contacto" value="whatsApp" id="radio-whatsApp" class="padron" checked>WhatsApp</label>
+        
+                </fieldset>
+        <fieldset>
+                <p>¿En cual horario prefiere ser atendido?</p>
+                   <select>
+                      <option>Mañana</option>
+                      <option>Tarde</option>
+                      <option>Noche</option>
+                    </select>
+        </fieldset>    
+        </form>
+            <input type="submit" class="boton" value="Enviar">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08am - 20pm</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08am - 20pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08am - 20pm</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="logo alura">
+        <p class="Copyright">&copy Copyright por Leonardo 2023</p>
+    </footer>
+</body>
+</html>

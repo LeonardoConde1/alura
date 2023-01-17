@@ -1,0 +1,136 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+main{
+    width: 940px;
+    margin: 0 0 0 35%;
+}
+
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.titulo-main{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.sub-main{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+.input-padron{
+    display: block;
+    margin: 15px;
+    width: 50%;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+.boton{
+    width: 40%;
+    margin: 20px 0px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #000000;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: yellow;
+    transform: scale(1.2);
+}
+
+footer{
+    color:#FFFFFF;
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding:40px;
+}
+
+.copyright{
+    
+    font-size: 13px;
+    margin:20px;
+}
+table{
+    margin: 40px 0;
+}
+thead{
+    background-color: #BBBBBB;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td,thead{
+    border: 1px solid #000000;
+    padding: 8px;
+}
+@media screen and (max-width:480px) {
+
+    form, .fieldset{
+        margin: 0 0 0 -100px ;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+   .caja, .principal, .sub-main{
+    width: auto;
+   }
+   .boton{
+     width: auto;
+     padding: 10px 50px;
+   }
+   #mensaje{
+    width: 100px;
+   }
+
+
+}
